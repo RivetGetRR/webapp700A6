@@ -1,0 +1,154 @@
+
+/* All below imports taken from Google Fonts - Free Resource at respective links*/
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lobster&family=Righteous&family=Roboto:wght@400&family=Source+Code+Pro:wght@400&family=Zen+Tokyo+Zoo&family=Zilla+Slab+Highlight&display=swap');
+
+h1{
+    /*font-family: 'Tilt Prism', cursive;*/
+    font-family: 'Lobster', cursive;
+    color: rgb(69, 10, 10) !important;
+    text-shadow: 2px 1px 3px rgb(82, 8, 8);
+}
+
+/* Code from assignment page link:
+Such as using: https://www.cssmatic.com/box-shadow
+ for Box shadows and changed according to needs, as mentioned in assigment instructions*/
+
+body,
+html {
+    background: white; /* fallback color */
+    background: linear-gradient( to bottom, #f7f9f7, #a3c6a1);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: auto;  
+    width: 100%;
+    height: 100%;
+    -webkit-box-shadow: inset 7px 0px 1px 0px rgb(124, 2, 2);
+    -moz-box-shadow: inset 7px 0px 1px 0px rgb(124, 2, 2);
+    box-shadow: inset 7px 0px 1px 0px rgb(124, 2, 2);
+    
+}
+
+h2,h3,h6{
+    /*font-family: 'Tilt Prism', cursive;*/
+    font-family: 'Bebas Neue', cursive;
+    color: rgb(124, 2, 2) !important;
+}
+
+h4,h5{
+    font-family: 'Zilla Slab Highlight', cursive;
+    color: #20761c;
+}
+.imageheader{
+    font-family: 'Lobster', cursive;
+    color: rgb(124, 2, 2) !important;
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
+    color: rgb(10, 94, 10);
+}
+
+li{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(10, 94, 10);
+}
+
+.plink{
+    font-family: 'Source Code Pro', monospace;
+    color: rgb(8, 80, 8);
+}
+/*Nav bar CSS*/
+
+.bg-light{
+    background:  #20761c !important;
+    -webkit-box-shadow:  0px 5px 5px 0px rgb(8, 80, 8);
+    -moz-box-shadow:  0px 5px 5px 0px rgb(8, 80, 8);
+    box-shadow:  0px 5px 5px 0px rgb(8, 80, 8);
+}
+
+.navbar-light .navbar-brand{
+    color: white;
+    font-family: 'Righteous', cursive;
+}
+.navbar-light .navbar-brand:hover,
+.navbar-nav .nav-item .nav-link:hover{
+    color: lightgreen;
+    font-family: 'Righteous', cursive;
+}
+
+.navbar-nav .nav-item .nav-link{
+    color:white;
+    font-family: 'Roboto', sans-serif;
+} 
+
+.navbar-nav .nav-item.active .nav-link{
+   color:goldenrod;
+   
+} 
+.navbar-nav .nav-item.active .nav-link:hover{
+    color:lightgreen;
+ } 
+
+a{
+    color: darkgoldenrod;
+    font-family: 'Source Code Pro', monospace;
+}
+a:hover{
+    color: rgb(3, 80, 62);
+}
+.btn-primary{
+    background: rgb(84, 117, 12);
+    border-color: #f7f9f7;
+    -webkit-box-shadow: 3px 3px 5px 0px rgb(92, 7, 7);
+    -moz-box-shadow: 3px 3px 5px 0px rgba(92, 7, 7);
+    box-shadow: 3px 3px 5px 0px rgba(92, 7, 7);
+}
+
+.btn-primary:hover{
+    background: limegreen;
+    border-color: #ffffff;
+    -webkit-box-shadow: 3px 3px 5px 0px rgb(75, 82, 5);
+    -moz-box-shadow: 3px 3px 5px 0px rgba(75, 82, 5);
+    box-shadow: 3px 3px 5px 0px rgba(75, 82, 5);
+}
+
+legend{
+    font-family: 'Righteous', cursive;
+    color: rgb(105, 0, 0);
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+label{
+    color: rgb(3, 80, 62);
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+table{
+    border-color: gray;
+    border-style: double;
+}
+
+th{
+    background: rgb(124, 2, 2);
+    color:white;
+}
+
+td:nth-child(odd){/*Works correctly but the odd proportions of the table skews the details/result*/
+    color:rgb(110, 72, 8);
+    /*background: rgb(223, 164, 87);  was removed to give better visibility to Student and Course Tables */
+    /*
+    background: linear-gradient( to bottom, #92b790, #f7f9f7);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: auto;
+    */
+}
+
+.studentRow{
+    color:rgb(110, 72, 8) !important;
+    
+}

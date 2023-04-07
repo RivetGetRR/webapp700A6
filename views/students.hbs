@@ -1,0 +1,41 @@
+<div class="row">
+    <div class="col-md-12">
+        <br>
+        <h2>Students <a href="/students/add" class="btn btn-success float-right">Add New Student</a></h2>
+        <hr/>
+        <!--p>TODO: render a list of all student first and last names here</p-->
+        {{#if message}}
+            {{message}}
+        {{else}}
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Student Num</th>
+                        <th>Full Name</th>
+                        <th>Email</th>
+                        <th>Address</th>
+                        <th>Status</th>
+                        <th>Course ID</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{#each student}}
+                        <tr>
+                            <td class="studentRow">{{this.studentNum}}</td>
+                            <td class="studentRow"><a href="/student/{{this.studentNum}}">{{this.firstName}} {{this.lastName}}</a></td>
+                            <td class="studentRow"><a href="mailto:{{this.email}}">{{this.email}}</a></td>
+                            <td class="studentRow">{{this.addressStreet}} {{this.addressCity}} {{this.addressProvince}}</td>
+                            <td class="studentRow">{{this.status}}</td>
+                            <td class="studentRow"><a href="/students?course={{this.course}}">{{this.course}}</a></td>
+                            <td><a href="/student/delete/{{this.studentNum}}" class="btn btn-danger" >REMOVE</a></td>
+                        <tr/>
+                    {{/each}} 
+                </tbody>
+
+            </table>
+        {{/if}}
+        <hr/>
+        <br/>
+    </div>   
+</div>
